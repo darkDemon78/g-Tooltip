@@ -1,28 +1,46 @@
-Author: A Malik
-Dated: 03-07-2012
-Email: darkking78@facebook.com
-Twitter: @demonKing78
-Blog: http://amalik101.blogspot.com/
+	g-Tooltip An Extension / plugin module for jQuery for nice looking Tooltips instead of the traditional dull ones
+    Copyright (C) 2012  A Malik
+	This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-g-Tooltip An Extension
-INTRODUCTION
-A plugin module for jQuery for nice looking Tooltips instead of the traditional dull ones
-FEATURES
-* Easy to setup
-* No additional css markup needed
-* Tested on Firefox, Chrome and IE 9
-* No need to write long javascript routines, just add it between <head></head> tags.
-	<script type="text/javascript" src="path to g-Tooltips.js" />
-* Simply invoke the plugin in your document onLoad event and it will take care of everything
-	$(document).ready(function() {
-		$('your element/s here').forgeTooltips();
-	});
-* Don't like default background color and you want to change the opacity as well as orientation? Not an issue
-	$(document).ready(function() {
-		var options = { orientation:'top', backgroundColor:'#007543', opacity:0.8  };
-		$('your element/s here').forgeTooltips(options);
-	});
-	* Please be advised left orientation is not working right now but top, bottom and right positioning works fine, that will be covered in the next release
-* Multiple elements support in single call.
-	$('body button[title],body input[title],body a[title]').forgeTooltips(options);
-	Easy as it looks!
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	
+
+	INTRODUCTION
+	
+	A plugin module for jQuery for nice looking Tooltips instead of the traditional dull ones
+	
+	FEATURES
+	
+	* Easy to setup
+	* No additional css markup needed
+	* Tested on Firefox, Chrome and IE 9
+	* No need to write long javascript routines, just add it between <head></head> tags.
+		<script type="text/javascript" src="path to g-Tooltips.js" />
+	* Simply invoke the plugin in your document onLoad event and it will take care of everything
+		$(document).ready(function() {
+			$('your element/s here').forgeTooltips();
+		});
+	* Don't like default background color and you want to change the opacity as well as orientation? Not an issue
+		$(document).ready(function() {
+			var options = { orientation:'top', backgroundColor:'#007543', opacity:0.8  };
+			$('your element/s here').forgeTooltips(options);
+		});
+		* Please be advised left orientation is not working right now but top, bottom and right positioning works fine, that will be covered in the next release
+	* Multiple elements support in single call.
+		$('body button[title],body input[title],body a[title]').forgeTooltips(options);
+		Easy as it looks!
+	
+	HOW TO REACH ME?
+	
+	Email: darkking78@facebook.com
+	Twitter: @demonKing78
+	Blog: http://amalik101.blogspot.com/
