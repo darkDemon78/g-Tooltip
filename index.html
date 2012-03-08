@@ -27,8 +27,22 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    #hoverDivBottom, #hoverHRefBottom, #hoverSpanBottom, #hoverDiv, #hoverHRef, #hoverSpan{
+    padding: 5px 10px;
+    display:block;
+    cursor:pointer;
+    }
+    iframe{
+    width:100%;
+    height:183px;
+    display:block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #143A70;
+    }
+    pre{white-space:pre-wrap;);
   </style>
-  <SCRIPT type="text/javascript" src="g-Tooltips.js"></SCRIPT>
+
 </head>
 
 <body>
@@ -65,7 +79,7 @@
       <li>Download the plugin in .zip or tar.gz format from the download section.</li>
 <li>Extract it inside a folder</li>
 <li>Move the g-Tooltip.js with license file from the extracted folder to the directory where you keep your project's javascript files.</li>
-<li>Reference the g-Tooltip.js file in the head tag of your html markup using<code><SCRIPT></code> tag.</li>
+<li>Reference the g-Tooltip.js file in the head tag of your html markup using<code>&lt;SCRIPT&gt;</code> tag.</li>
 <li>Invoke it in your page load event method. See README for detailed explanation.</li>
 </ol>
     
@@ -94,7 +108,30 @@
       <h2>Contact</h2>
       <p>Adel Malik (aa.malik101@gmail.com)<br/>      </p>
     
+<h2>Demo</h2>
+<p>Default formatting</p>
+<pre>
+$('body #hoverDiv[title],body #hoverHRef[title],body #hoverSpan[title]').forgeTooltips();
+</pre>
+<iframe  src="default.html"></iframe>
+<pre>
+var options = {
+	orientation: 'bottom', backgroundColor: '#000', opacity: 0.5 
+};
+$('body #hoverDiv[title],body #hoverHRef[title],body #hoverSpan[title]').forgeTooltips(options);
+</pre>
+<p>Different Color with bottom orientation</p>
 
+<iframe src="bottom.html"></iframe>
+
+<p>Right oriented with no opacity</p>
+<pre>
+var options = {
+	orientation: 'right', backgroundColor: '#A72005', opacity: 1 
+};
+$('body #hoverDiv[title],body #hoverHRef[title],body #hoverSpan[title]').forgeTooltips(options);
+</pre>
+<iframe src="right.html"></iframe>
     <h2>Download</h2>
     <p>
       You can download this project in either
