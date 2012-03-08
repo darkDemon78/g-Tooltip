@@ -129,9 +129,16 @@ $('body #hoverDiv[title],body #hoverHRef[title],body #hoverSpan[title]').forgeTo
 var options = {
 	orientation: 'right', backgroundColor: '#A72005', opacity: 1 
 };
-$('body #hoverDiv[title],body #hoverHRef[title],body #hoverSpan[title]').forgeTooltips(options);
+$('#hoverDiv[title],#hoverHRef[title],#hoverSpan[title]').forgeTooltips(options);
 </pre>
 <iframe src="right.html"></iframe>
+<h4>Want to override default font color?</h4>
+It's simple, just extend your options variable with another parameter like this
+<pre>
+var options = {
+	orientation: 'right', backgroundColor: '#A72005', opacity: .5, fontColor:#000
+};
+</pre>
     <h2>Download</h2>
     <p>
       You can download this project in either
