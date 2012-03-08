@@ -32,7 +32,7 @@
     padding: 5px 10px;
     display:block;
     cursor:pointer;
-    width:100px;
+    width:80px;
     }
   </style>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -43,10 +43,10 @@
   <SCRIPT type="text/javascript" src="g-Tooltips.js"></SCRIPT>
   <script type="text/javascript">
   $(document).ready(function(){
-		var options = {
+	var options = {
 		orientation: 'right', backgroundColor: '#A72005', opacity: 1 
 	};
-	$('body #hoverDiv[title],body #hoverHRef[title],body #hoverSpan[title]').forgeTooltips(options);
+	$('#hoverDiv[title],#hoverHRef[title],#hoverSpan[title]').forgeTooltips(options);
 	
   });
   </script>
